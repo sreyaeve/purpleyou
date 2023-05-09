@@ -110,9 +110,9 @@ vmesslink3="vmess://$(echo $grpc | base64 -w 0)"
 systemctl restart xray > /dev/null 2>&1
 service cron restart > /dev/null 2>&1
 clear
-echo -e "${PURPLE}╒════════════════════════════════════════════╕\033[0m" -a /etc/xraylog/log-vmess-$user.txt
+echo -e "${PURPLE}╒════════════════════════════════════════════╕\033[0m" | tee -a /etc/xraylog/log-vmess-$user.txt
 echo -e " \E[0;41;36m            DETAIL VMESS ACCOUNT            \E[0m" | tee -a /etc/xraylog/log-vmess-$user.txt
-echo -e "${PURPLE}╘════════════════════════════════════════════╛\033[0m" -a /etc/xraylog/log-vmess-$user.txt
+echo -e "${PURPLE}╘════════════════════════════════════════════╛\033[0m" | tee -a /etc/xraylog/log-vmess-$user.txt
 echo -e "Remarks        : ${user}" | tee -a /etc/xraylog/log-vmess-$user.txt
 echo -e "Domain         : ${domain}" | tee -a /etc/xraylog/log-vmess-$user.txt
 echo -e "ISP            : ${ISP}" | tee -a /etc/xraylog/log-vmess-$user.txt
@@ -126,15 +126,15 @@ echo -e "Security       : auto" | tee -a /etc/xraylog/log-vmess-$user.txt
 echo -e "Network        : ws" | tee -a /etc/xraylog/log-vmess-$user.txt
 echo -e "Path           : /vmess • /multipath • (suka-suka)" | tee -a /etc/xraylog/log-vmess-$user.txt
 echo -e "Service Name   : vmess-grpc" | tee -a /etc/xraylog/log-vmess-$user.txt
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/xraylog/log-vmess-$user.txt
+echo -e "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/xraylog/log-vmess-$user.txt
 echo -e "Link TLS       : ${vmesslink1}" | tee -a /etc/xraylog/log-vmess-$user.txt
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/xraylog/log-vmess-$user.txt
+echo -e "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/xraylog/log-vmess-$user.txt
 echo -e "Link none TLS  : ${vmesslink2}" | tee -a /etc/xraylog/log-vmess-$user.txt
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/xraylog/log-vmess-$user.txt
+echo -e "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/xraylog/log-vmess-$user.txt
 echo -e "Link gRPC      : ${vmesslink3}" | tee -a /etc/xraylog/log-vmess-$user.txt
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/xraylog/log-vmess-$user.txt
+echo -e "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/xraylog/log-vmess-$user.txt
 echo -e "Expired On     : $exp" | tee -a /etc/xraylog/log-vmess-$user.txt
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/xraylog/log-vmess-$user.txt
+echo -e "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/xraylog/log-vmess-$user.txt
 echo "" | tee -a /etc/xraylog/log-vmess-$user.txt
 echo "Thanks for using ZenServices"
 read -n 1 -s -r -p "Press any key to back"
