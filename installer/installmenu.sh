@@ -175,17 +175,17 @@ wget -O m-vmess "https://raw.githubusercontent.com/sreyaeve/purpleyou/main/file/
 wget -O m-vless "https://raw.githubusercontent.com/sreyaeve/purpleyou/main/file/m-vless.sh"
 wget -O clearcache "https://raw.githubusercontent.com/sreyaeve/purpleyou/main/file/clearcache.sh"
 wget -O m-trojan "https://raw.githubusercontent.com/sreyaeve/purpleyou/main/file/m-trojan.sh"
-wget -O tendang "https://raw.githubusercontent.com/sreyaeve/xraylite/main/ssh/tendang.sh"
+wget -O tendang "https://raw.githubusercontent.com/sreyaeve/purpleyou/main/file/tendang.sh"
 
 # menu system
 wget -O m-domain "https://raw.githubusercontent.com/sreyaeve/purpleyou/main/file/m-domain.sh"
-wget -O add-host "https://raw.githubusercontent.com/sreyaeve/xraylite/main/ssh/add-host.sh"
-wget -O certv2ray "https://raw.githubusercontent.com/sreyaeve/xraylite/main/xray/certv2ray.sh"
-wget -O speedtest "https://raw.githubusercontent.com/sreyaeve/xraylite/main/ssh/speedtest_cli.py"
+wget -O add-host "https://raw.githubusercontent.com/sreyaeve/purpleyou/main/file/add-host.sh"
+wget -O certv2ray "https://raw.githubusercontent.com/sreyaeve/purpleyou/main/file/certv2ray.sh"
+wget -O speedtest "https://raw.githubusercontent.com/sreyaeve/purpleyou/main/file/speedtest_cli.py"
 wget -O restart "https://raw.githubusercontent.com/sreyaeve/purpleyou/main/file/restart.sh"
 
 
-wget -O xp "https://raw.githubusercontent.com/sreyaeve/xraylite/main/ssh/xp.sh"
+wget -O xp "https://raw.githubusercontent.com/sreyaeve/purpleyou/main/file/xp.sh"
 #wget -O gotop "https://raw.githubusercontent.com/sreyaeve/purpleyou/main/gotop.sh"
 
 chmod +x menu
