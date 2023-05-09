@@ -183,8 +183,7 @@ wget -O add-host "https://raw.githubusercontent.com/sreyaeve/xraylite/main/ssh/a
 wget -O certv2ray "https://raw.githubusercontent.com/sreyaeve/xraylite/main/xray/certv2ray.sh"
 wget -O speedtest "https://raw.githubusercontent.com/sreyaeve/xraylite/main/ssh/speedtest_cli.py"
 wget -O restart "https://raw.githubusercontent.com/sreyaeve/purpleyou/main/file/restart.sh"
-wget -O bw "https://raw.githubusercontent.com/sreyaeve/purpleyou/main/file/bw.sh"
-wget -O m-tcp "https://raw.githubusercontent.com/sreyaeve/purpleyou/main/file/tcp.sh"
+
 
 wget -O xp "https://raw.githubusercontent.com/sreyaeve/xraylite/main/ssh/xp.sh"
 #wget -O gotop "https://raw.githubusercontent.com/sreyaeve/purpleyou/main/gotop.sh"
@@ -200,8 +199,6 @@ chmod +x add-host
 chmod +x certv2ray
 chmod +x speedtest
 chmod +x restart
-chmod +x bw
-chmod +x m-tcp
 chmod +x xp
 
 cd
