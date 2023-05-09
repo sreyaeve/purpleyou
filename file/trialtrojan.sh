@@ -31,9 +31,9 @@ trojanlink1="trojan://${uuid}@${domain}:${tls}?mode=gun&security=tls&type=grpc&s
 trojanlink="trojan://${uuid}@isi_bug_disini:${tls}?path=%2Ftrojan-ws&security=tls&host=${domain}&type=ws&sni=${domain}#${user}"
 trojanlink2="trojan://${uuid}@isi_bug_disini:${ntls}?path=%2Ftrojan-ws&security=tls&host=${domain}&type=ws#${user}"
 clear
-echo -e "${PURPLE}╒════════════════════════════════════════════╕\033[0m" | tee-a /etc/xraylog/log-trojan-$user.txt
+echo -e "${PURPLE}╒════════════════════════════════════════════╕\033[0m" | tee -a /etc/xraylog/log-trojan-$user.txt
 echo -e " \E[0;41;36m                TRIAL TROJAN                \E[0m" | tee -a /etc/xraylog/log-trojan-$user.txt
-echo -e "${PURPLE}╘════════════════════════════════════════════╛\033[0m" | tee-a /etc/xraylog/log-trojan-$user.txt
+echo -e "${PURPLE}╘════════════════════════════════════════════╛\033[0m" | tee -a /etc/xraylog/log-trojan-$user.txt
 echo -e "Remarks        : ${user}" | tee -a /etc/xraylog/log-trojan-$user.txt
 echo -e "Host/IP        : ${domain}" | tee -a /etc/xraylog/log-trojan-$user.txt
 echo -e "ISP            : ${ISP}" | tee -a /etc/xraylog/log-trojan-$user.txt
