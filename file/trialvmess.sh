@@ -82,9 +82,9 @@ service cron restart > /dev/null 2>&1
 clear
 
 
-echo -e "${PURPLE}╒════════════════════════════════════════════╕\033[0m" -a /etc/xraylog/log-vmess-$user.txt
+echo -e "${PURPLE}╒════════════════════════════════════════════╕\033[0m" | tee-a /etc/xraylog/log-vmess-$user.txt
 echo -e " \E[0;41;36m                 TRIAL VMESS                \E[0m" | tee -a /etc/xraylog/log-vmess-$user.txt
-echo -e "${PURPLE}╘════════════════════════════════════════════╛\033[0m" -a /etc/xraylog/log-vmess-$user.txt
+echo -e "${PURPLE}╘════════════════════════════════════════════╛\033[0m" | tee-a /etc/xraylog/log-vmess-$user.txt
 echo -e "Remarks        : ${user}" | tee -a /etc/xraylog/log-vmess-$user.txt
 echo -e "Domain         : ${domain}" | tee -a /etc/xraylog/log-vmess-$user.txt
 echo -e "ISP            : ${ISP}" | tee -a /etc/xraylog/log-vmess-$user.txt
