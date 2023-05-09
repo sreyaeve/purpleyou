@@ -137,7 +137,7 @@ echo -e "${RED}└────────────────────�
 	  echo -e "${PURPLE}╒════════════════════════════════════════════╕\033[0m"
     echo -e " \E[0;41;36m               Bandwidth Usage              \E[0m"
     echo -e "${PURPLE}╘════════════════════════════════════════════╛\033[0m"
-echo -e "${BLUE} Today ${NC} : $todayd $today_v            ${BLUE} Monthly ${NC}: $month $month_v"
+echo -e "${BLUE} Today ${NC} : $todayd $today_v     ${BLUE} Monthly ${NC}: $month $month_v"
 	  echo -e "${PURPLE}╒════════════════════════════════════════════╕\033[0m"
     echo -e " \E[0;41;36m                  MENU XRAY                 \E[0m"
     echo -e "${PURPLE}╘════════════════════════════════════════════╛\033[0m"
