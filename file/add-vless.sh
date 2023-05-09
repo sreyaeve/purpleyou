@@ -59,9 +59,9 @@ vlesslink2="vless://${uuid}@${domain}:$none?path=/vless&encryption=none&type=ws#
 vlesslink3="vless://${uuid}@${domain}:$tls?mode=gun&security=tls&encryption=none&type=grpc&serviceName=vless-grpc&sni=bug.com#${user}"
 systemctl restart xray
 clear
-echo -e "${PURPLE}╒════════════════════════════════════════════╕\033[0m" | tee-a /etc/xraylog/log-vless-$user.txt
+echo -e "${PURPLE}╒════════════════════════════════════════════╕\033[0m" | tee -a /etc/xraylog/log-vless-$user.txt
 echo -e " \E[0;41;36m            DETAIL VLESS ACCOUNT            \E[0m" | tee -a /etc/xraylog/log-vless-$user.txt
-echo -e "${PURPLE}╘════════════════════════════════════════════╛\033[0m" | tee-a /etc/xraylog/log-vless-$user.txt
+echo -e "${PURPLE}╘════════════════════════════════════════════╛\033[0m" | tee -a /etc/xraylog/log-vless-$user.txt
 echo -e "Remarks        : ${user}" | tee -a /etc/xraylog/log-vless-$user.txt
 echo -e "Domain         : ${domain}" | tee -a /etc/xraylog/log-vless-$user.txt
 echo -e "ISP            : ${ISP}" | tee -a /etc/xraylog/log-vless-$user.txt
