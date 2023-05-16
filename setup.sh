@@ -58,6 +58,28 @@ sleep 2
 echo -e "${green}Permission Accepted${NC}"
 sleep 3
 clear
+mkdir /user >> /dev/null 2>&1
+apt install resolvconf network-manager dnsutils bind9 -y
+cat > /etc/systemd/resolved.conf << END
+[Resolve]
+DNS=8.8.8.8 8.8.4.4
+Domains=~.
+ReadEtcHosts=yes
+END
+systemctl enable resolvconf
+systemctl enable systemd-resolved
+systemctl enable NetworkManager
+rm -rf /etc/resolv.conf
+rm -rf /etc/resolvconf/resolv.conf.d/head
+echo "
+nameserver 127.0.0.53
+" >> /etc/resolv.conf
+echo "
+" >> /etc/resolvconf/resolv.conf.d/head
+systemctl restart resolvconf
+systemctl restart systemd-resolved
+systemctl restart NetworkManager
+echo "Google DNS" > /user/current
 mkdir -p /var/lib/zenhost >/dev/null 2>&1
 echo "IP=" >> /var/lib/zenhost/ipvps.conf
 
